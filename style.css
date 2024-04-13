@@ -1,4 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+body {
+    color: rgb(213, 213, 213);
+    font-family: "Bitter", serif;
+}
+
+h1 {
+    font-size: 24px !important;
+    font-weight: bold !important;
+}
+
+main {
+    background: rgb(0,28,61);
+background: linear-gradient(90deg, rgba(0,28,61,1) 0%, rgba(0,85,172,1) 27%, rgba(46,175,201,0.9066220238095238) 100%);
+}
+
+nav {
+    background: rgba(0, 40, 86, 0.461);
+}
+
+aside{
+    background: rgb(0,28,61);
+}
+
+address {
+    color: rgb(213, 213, 213);
+}
+
+#botao {
+    padding: 10px;
+    border-radius: 8px;
+    background-color: rgba(0,28,61,0.6);
+}
+
+#botao:hover{
+    background-color: rgba(46, 175, 201, 0.477);
+
+} 
+
 @media screen and (min-width:768px ){
 main {
-    width: calc(100%-240px);}
+    width: calc(100% - 240px);}
 }

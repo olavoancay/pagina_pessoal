@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" type="text/css" href="style_dict.css" media="screen" />
+    <link rel="shortcut icon" type="image/svg" href="./assets/icons/oa-office.svg">
+    <meta charset="utf-8">
+    <script src="https://cdn.tailwindcss.com"></script>
+<title>Dicionário de Tags HTML</title>
+</head>
+
+<body class="flex flex-col justify-center w-full">
+  <header class="mx-auto">
+    <a href="./index.html" id="botao">Voltar para a Página Pessoal</a>
+  </header>
+  <main class="flex flex-col justify-center w-fit mx-auto">
+    <table class="text-gray-300 mt-10 font-bold">
+      <caption class="mb-8 text-2xl">Tags HTML</caption>
+      <thead>
+        <tr>
+          <th>Tag</th>
+          <th>Como utilizar</th>
+        </tr>
+      </thead>
+      <tbody id="corpo">
+       <!--Completo com JS-->
+      </tbody>
+    </table>
+  </main>
+  <section class="flex flex-col justify-center text-center pt-10">
+    <address >Desenvolvido por ©<a href="mailto:bbfhernandez@gmail.com?subject=Te amo Bruninha!!!" class="hover:text-sky-400">Olavo Ançay</a> para a disciplina de Programação para Web</address>
+  
+    <div class="flex justify-center items-center py-4">
+      <a href="https://br.linkedin.com/in/olavoancay"><img src="./assets/icons/linkedin.svg" alt="Linkedin" class="px-3 w-16" /></a>
+      <a href="https://github.com/olavoancay"><img src="./assets/icons/github.svg" alt="GitHub" class="px-3 w-20"/></a>
+    </div> 
+  </section>
+
+<script>
+    const dados = [
+    
+    { tag: "title", utilizacao: "Define o título da página, que é exibido na barra de título do navegador ou na guia do navegador. É importante para a identificação e a descrição do conteúdo da página." },
+    { tag: "br", utilizacao: "Cria uma quebra de linha dentro de um texto. É utilizada para separar visualmente diferentes partes de um conteúdo ou para iniciar uma nova linha." },
+    { tag: "header", utilizacao: "Cabeçalho: Representa um grupo de introdução à página, podendo conter elementos como a logo, formulário de pesquisa, e outros." },
+    { tag: "nav", utilizacao: "Elemento de navegação, uma seção que aponta para outras páginas ou áreas dentro da mesma página, com links de navegação." },
+    { tag: "ul", utilizacao: "Unordered list: Lista de elementos desordenados, ou seja, onde a ordenação numérica não importa." },
+    { tag: "ol", utilizacao: "Ordered list: Lista de elementos ordenados, onde a ordenação numérica importa." },
+    { tag: "li", utilizacao: "List item: Item de uma lista, seja ordenada ou desordenada. Deve estar contido em um elemento pai do tipo ul, ol, ou menu." },
+    { tag: "a", utilizacao: "Elemento Âncora: Cria uma hiperligação nas páginas web, para arquivos, endereços de email, telefone ou endereços URL." },
+    { tag: "aside", utilizacao: "Representa uma seção que é tangencialmente relacionada com o conteúdo, normalmente representada como barras laterais." },
+    { tag: "h1 - h6", utilizacao: "Os elementos de h1 até h6 representam os seis níveis de títulos de uma seção, h1 é o nível mais alto, e h6 é o mais baixo." },
+    { tag: "abbr", utilizacao: "Elemento de abreviação html representa a abreviação e opcionalmente fornece a descrição completa para ela. O atributo 'title', deve conter a descrição completa e apenas ela." },
+    { tag: "img", utilizacao: "Representa a inserção de uma imagem no documento." },
+    { tag: "main", utilizacao: "Define o conteúdo principal dentro do body no documento ou aplicação." },
+    { tag: "section", utilizacao: "Representa uma seção genérica contida no documento, geralmente são identificados através de um título de cabeçalho." },
+    { tag: "div", utilizacao: "Representa um elemento de divisão, ou seja, um container genérico que não representa nada, não possuindo valor semântico, de significado. Utilizado para agrupar elementos para fins de estilização. Deve ser utilizado quando não houver outro elemento de semântica." },
+    { tag: "address", utilizacao: "Fornece informações de contato e pode incluir qualquer tipo de informação de contato necessária, como endereço físico, URL, email, telefone, mídia social, coordenadas geográficas, e outros." },
+    { tag: "table", utilizacao: "Define uma tabela HTML que consiste em linhas tr e colunas (td ou th). É usada para organizar dados em formato tabular, permitindo a exibição de informações de maneira estruturada e ordenada." },
+    { tag: "caption", utilizacao: "Define o título ou a legenda de uma tabela. É exibido acima da tabela e fornece uma descrição breve do conteúdo ou do propósito da tabela." },
+    { tag: "thead", utilizacao: "Define o cabeçalho de uma tabela. Contém uma ou mais linhas de células de cabeçalho (th) que representam os títulos das colunas da tabela." },
+    { tag: "tbody", utilizacao: "Define o corpo principal de uma tabela. Contém uma ou mais linhas de células de dados (td) que representam os dados da tabela." },
+    { tag: "tr", utilizacao: "Define uma linha em uma tabela. É composta por uma ou mais células de tabela (td ou th) que representam os itens individuais naquela linha." },
+    { tag: "th", utilizacao: "Define uma célula de cabeçalho em uma tabela. É usada para representar os títulos das colunas ou linhas em uma tabela. O conteúdo dentro de uma célula (th)." },
+    { tag: "td", utilizacao: "Define uma célula de dados em uma tabela. É usada para representar os dados ou conteúdo de uma tabela. O conteúdo dentro de uma célula (td)." }
+];
+
+    document.getElementById('corpo').innerHTML =
+    dados.map(item=>`<tr>
+          <td class="text-center px-2">${item.tag}</td>
+          <td>${item.utilizacao}</td>
+        </tr>`).join('');
+</script>
+</body>
+
+</html>

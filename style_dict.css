@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+body {
+    background: rgb(0,28,61);
+    background: linear-gradient(90deg, rgba(0,28,61,1) 0%, rgba(0,85,172,1) 27%, rgba(46,175,201,0.9066220238095238) 100%);
+    padding: 30px;
+    color: rgb(213, 213, 213);
+    font-family: "Bitter", serif;
+}
+
+table {
+    width: 80%;
+    margin: 0 auto; 
+    max-width: 900px; 
+    border-spacing: 2px;
+}
+
+td {border-width: 1px;
+    border-color: rgb(213, 213, 213);
+    padding: 5px 10px; }
+
+th {background-color: rgba(46, 175, 201, 0.477);
+    border-width: 1px;
+    border-color: rgb(213, 213, 213);
+    padding: 5px 10px;
+}
+
+
+tbody tr:nth-child(odd) {
+    background-color: rgba(0,28,61,0.6);
+}
+
+tr:nth-child(even) {
+    background-color: rgba(46, 175, 201, 0.477);
+}
+
+#botao {
+    padding: 10px;
+    border-radius: 8px;
+    background-color: rgba(0,28,61,0.6);;
+}
+
+#botao:hover{
+    background-color: rgba(46, 175, 201, 0.477);
+
+} 

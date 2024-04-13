@@ -8,7 +8,7 @@
     </head>
     <body class="max-h-screen md:overflow-hidden">
       <header class="fixed w-full z-20">
-        <nav class="bg-gray-800">
+        <nav>
           <div class="mx-auto max-w-7xl px-2 md:px-6 lg:px-8">
             <div class="relative flex h-16 items-center justify-center">
               <div class="flex items-center justify-center md:items-stretch">
@@ -21,13 +21,13 @@
         </nav>
       </header>
       <div class="flex flex-col md:flex-row max-h-screen md:justify-between">
-        <aside class="flex flex-col bg-gray-600 pt-16 justify-center items-center text-center w-full md:w-60">
-          <img src="./assets/Images/cara.jpg" class="w-2/3 mb-6">
-          <h1 class="text-white">Olavo Ançay</h1>
-          <a href="https://sin.ufsc.br" class="text-white hover:text-gray-300">Etudante de Sistemas de Informação - UFSC</a>
+        <aside class="flex flex-col pt-16 justify-center items-center text-center w-full md:w-60 pb-32">
+          <img src="./assets/Images/cara.jpg" class="w-2/3 mb-6 m-2 rounded-xl ">
+          <h1>Olavo Ançay</h1>
+          <a href="https://sin.ufsc.br" class="hover:text-sky-400">Etudante de Sistemas de Informação - UFSC</a>
         </aside>
-        <main class="p-8 md:w-4/5 md:overflow-y-scroll flex flex-col md:px-20">
-          <section id="Sobre Mim" class="pb-8 pt-16 text-center">
+        <main class="p-8 md:overflow-y-scroll flex flex-col md:px-20">
+          <section id="Sobre mim" class="py-8 md:pt-20 text-center">
             <h1>SOBRE MIM</h1>
           </br>
             <p>Oii! Eu sou o Olavo, bem vindo a minha página pessoal </br></br>
@@ -42,7 +42,7 @@
               significativa e uma transformação completa na cultura organizacional.
             </p>
           </section>
-          <section id="Interesses" class="py-8 text-center">
+          <section id="Interesses" class=" py-8 md:pt-20 text-center">
             <h1>INTERESSES</h1>
           </br>
             <p>Sou fascinado por tecnologia, principalmente em tudo que está relacionado
@@ -54,7 +54,7 @@
 
             </p>
           </section>
-          <section id="Disciplinas cursadas" class="py-8 text-left mx-auto flex flex-col justify-center">
+          <section id="Disciplinas cursadas" class="md:pt-20 pb-8 text-left mx-auto flex flex-col justify-center">
             <h1 class="text-center">DISCIPLINAS CURSADAS</h1>
             <div class="w-fit flex flex-col xl:flex-row">
             <div>  
@@ -73,10 +73,19 @@
           <ul id="linguagens" class="flex justify-evenly align-center text-center flex-wrap gap-2.5">
                 <!-- Adicionado com js -->
               </ul>
-            </div>
           </section>
-          <section>
-            <h1>Contato</h1>
+          <section class="text-center py-10">
+            <h1>Página com dicionário das tags HTML usadas</h1>
+          </br>
+             <a href="./html_dict.html" id="botao">Acesse aqui</a>
+          </section>
+          <section class="flex flex-col justify-center text-center pt-10">
+            <address >Desenvolvido por ©<a href="mailto:olavoancay@hotmail.com" class="hover:text-sky-400">Olavo Ançay</a> para a disciplina de Programação para Web</address>
+          
+            <div class="flex justify-center items-center py-4">
+              <a href="https://br.linkedin.com/in/olavoancay"><img src="./assets/icons/linkedin.svg" alt="Linkedin" class="px-3 w-16" /></a>
+              <a href="https://github.com/olavoancay"><img src="./assets/icons/github.svg" alt="GitHub" class="px-3 w-20"/></a>
+            </div> 
           </section>
         </main>
       </div>
@@ -123,7 +132,7 @@
         listaEmAndamentos.map(item=>`<li>${item}</li>`).join('');
 
         document.getElementById('navbar').innerHTML =
-        menu.map(item=>`<a href="#${item}" class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">${item}</a>`).join('');
+        menu.map(item=>`<a href="#${item}" class="hover:text-sky-400 rounded-md px-3 py-2 text-sm font-medium">${item}</a>`).join('');
         
         document.getElementById('linguagens').innerHTML =
         linguagens.map(item => `<li class="flex flex-col items-center justify-center p-2.5">
